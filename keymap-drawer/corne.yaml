@@ -74,8 +74,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Vol Down
+  - Vol Up
   - ↓
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
