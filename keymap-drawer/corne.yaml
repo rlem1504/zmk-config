@@ -1,8 +1,49 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
+  BAS:
+  - {t: ↹, h: CAPSLOCK}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace-outline$$
+  - LEFT SHIFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: _, h: '-'}
+  - LEFT CONTROL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: '''', h: Sft+"}
+  - Esc
+  - $$mdi:apple-keyboard-command$$
+  - NUM
+  - ␣
+  - ⏎
+  - SYM
+  - $$mdi:apple-keyboard-option$$
+  NUM:
   - ↹
   - '1'
   - '2'
@@ -15,22 +56,19 @@ layers:
   - '9'
   - '0'
   - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  - LEFT SHIFT
+  - '&select_all'
+  - '&ctas'
+  - '&new_macro'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ←
-  - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Home
+  - End
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -38,15 +76,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ↓
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DELETE
   - $$mdi:apple-keyboard-command$$
   - {type: held}
   - ␣
   - ⏎
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-option$$
-  RAI:
-  - ↹
+  SYM:
+  - '?'
   - '!'
   - '@'
   - '#'
@@ -54,24 +95,24 @@ layers:
   - '%'
   - ^
   - AMPS
-  - KP MULTIPLY
+  - '*'
   - (
   - )
   - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
+  - LEFT SHIFT
   - '['
   - ']'
+  - '{'
+  - '}'
+  - '='
+  - '-'
+  - (
+  - )
+  - /
   - \
   - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - LEFT CONTROL
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,3 +129,46 @@ layers:
   - ⏎
   - {t: '&studio_unlock', type: held}
   - $$mdi:apple-keyboard-option$$
+  function:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
